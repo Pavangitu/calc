@@ -12,7 +12,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #810606 0%, #198c3a 100%);
+            background: linear-gradient(135deg, #667eea 0%, #478a63 100%);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
             min-height: 100vh;
@@ -20,7 +20,7 @@
 
         .container {
             max-width: 1400px;
-            margin: 0 auto;    
+            margin: 0 auto;
         }
 
         /* Header */
@@ -75,7 +75,7 @@
         }
 
         .mode-btn.active {
-            background: #ea14ad;
+            background: #667eea;
             color: white;
             transform: scale(1.05);
         }
@@ -150,7 +150,7 @@
         }
 
         .special {
-            background: #de3b09;
+            background: #764ba2;
             color: white;
         }
 
@@ -195,7 +195,7 @@
 
         .excel-btn { background: linear-gradient(135deg, #1e7145, #107c41); }
         .word-btn { background: linear-gradient(135deg, #2b5797, #185abd); }
-        .ppt-btn { background: linear-gradient(135deg, #1f0eb7, #4f0ccc); }
+        .ppt-btn { background: linear-gradient(135deg, #d83b01, #c43100); }
 
         .data-table {
             margin-top: 20px;
@@ -618,7 +618,7 @@
             let doc = `<html>
             <head><title>Calculator Report</title></head>
             <body>
-                <h1>Calculator Report</h1>
+                <h1> Calculator Report</h1>
                 <h2>Generated: ${new Date().toLocaleString()}</h2>
                 <h3>Calculation History</h3>
                 <table border="1" cellpadding="5">
@@ -684,7 +684,7 @@
         }
 
         function importFromExcel() {
-            alert("📥 To import from Excel:\n1. Copy your data from Excel\n2. Paste below in CSV format\n3. Click Import");
+            alert(" To import from Excel:\n1. Copy your data from Excel\n2. Paste below in CSV format\n3. Click Import");
             
             const csvData = prompt("Paste CSV data (Format: operation,value1,value2,result):");
             if (csvData) {
